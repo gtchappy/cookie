@@ -1,5 +1,7 @@
 import { defineComponent, ref } from "vue";
 import { RouterView } from "vue-router";
+import "./App.scss"
+
 
 export const App = defineComponent({
 
@@ -8,22 +10,10 @@ export const App = defineComponent({
         const onClick = () => {
             refCount.value += 1
         }
-        return () =>
-            <>
-                <header>导航</header>
-                <ul>
-                    <li>
-                        <router-link to="/">Foo</router-link>
-                    </li>
-                    <li>
-                    <router-link to="/about">Bar</router-link>
-                    </li>
-                    <li></li>
-                </ul>
-                <div>
-                    <RouterView></RouterView>
-                </div>
-                <footer>页脚</footer>
-            </>
+        return () =>(
+            <div>
+                <RouterView/>
+            </div>
+        )
     }
 })
