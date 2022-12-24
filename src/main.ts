@@ -1,22 +1,14 @@
 import { createApp } from 'vue'
 import { App } from './App'
-import { Bar } from './views/Bar'
-import { Foo } from './views/Foo'
-import {createRouter,createWebHashHistory} from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import { routes } from './config/routes'
+import { history } from './shared/history'
 
 
-const routes = [
-    { path: '/', component: Foo },
-    { path: '/about', component: Bar },
-]
-
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes, 
-  })
+const router = createRouter({ history, routes, })
 
 
-// 申明
+// 声明
 const app = createApp(App)
 // 使用
 app.use(router)
