@@ -1,0 +1,29 @@
+.wrapper {
+    >.card {
+        background: var(--welcome-card-bg-color);
+        border-radius: 8px;
+        padding: 16px;
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >img {
+            height: 130px;
+            width: 128px;
+        }
+    }
+
+    >.actions {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 16px;
+
+        >.fake {
+            visibility: hidden;
+        }
+    }
+
+}
