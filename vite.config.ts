@@ -12,5 +12,8 @@ export default defineConfig({
       transformOn:true,
       mergeProps:true
     }),
-  ]
+  ],
+  server:{
+    host:'192.168.1.103'
+  }
 })

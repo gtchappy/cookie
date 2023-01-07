@@ -9,6 +9,7 @@ export const First = defineComponent({
             <div class={s.wrapper}>
                 <div class={s.card}>
                     <img class={s.wallet} src={wallet} />
+                    <h2> &nbsp; 会挣钱<br/>还会省钱</h2>
                 </div>
                 <div class={s.actions}>
                     <RouterLink to="/start" class={s.fake}>跳过</RouterLink>
