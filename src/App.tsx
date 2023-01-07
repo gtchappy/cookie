@@ -11,7 +11,7 @@ export const App = defineComponent({
             refCount.value += 1
         }
         return () =>(
-            <div>
+            <div class="page">
                 <RouterView/>
             </div>
         )
